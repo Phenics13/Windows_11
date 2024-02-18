@@ -33,7 +33,7 @@ Used toys: `Keyboard Manager`, `Fancy zones`, `Quick Accent`, `Awake`
 
 Remap shortcuts to control volume/lightning with `PowerToys` keyboard settings: `ctrl` + action buttons:
 
-![image-20240216103657235](.\img\image-20240216103657235.png)
+![image-20240216103657235](./img/image-20240216103657235.png)
 
 ### Fancy zones
 
@@ -41,7 +41,7 @@ Use `cmd` + `shift` + `` ` to open Fancy zones
 
 Hold `shift` and drag window to a fancy zone:
 
-![image-20240216110714799](.\img\image-20240216110714799.png)
+![image-20240216110714799](./img/image-20240216110714799.png)
 
 ## `Terminal`
 
@@ -90,7 +90,7 @@ winget install eza-community.eza
 
 I use custom theme `AtomicMod.omp.json` with `oh-my-posh` in `Bash` and `PowerShell`:
 
-![image-20240218214522797](.\img\image-20240218214522797.png)
+![image-20240218214522797](./img/image-20240218214522797.png)
 
 Modified `.bashrc` to use theme in `Bash`:
 
