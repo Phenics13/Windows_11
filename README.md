@@ -23,7 +23,13 @@ Properties -> Compatibility -> Change high DPI settings -> Override high DPI sca
 
 Also to prevent widgets in `Rainmeter` from overflowing windows, change its `Position` in the program to `Bottom`:
 
-![image-20240218232435760](./img/image-20240218232435760.png) 
+![image-20240218232435760](./img/image-20240218232435760.png)
+
+Widget positions:
+
+- Calendar (Large) - 2160x31
+- Music (Wide) - 2160x400
+- Weather (Wide) - 2160x590
 
 ## `PowerToys`
 
