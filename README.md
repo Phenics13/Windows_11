@@ -9,6 +9,22 @@
 - Run "Alfred": `alt` + `space`
 - Screenshot: `F14`
 
+## 🔍 Hints
+
+To disable change Virtual Desktop animation via `ViVeTool`:
+
+```shell
+./vivetool /disable /id:42354458
+```
+
+To fix `Rainmeter` DPI scaling (blurry text) [here](https://forum.rainmeter.net/viewtopic.php?t=22272):
+
+Properties -> Compatibility -> Change high DPI settings -> Override high DPI scaling behaviour.
+
+Also to prevent widgets in `Rainmeter` from overflowing windows, change its `Position` in the program to `Bottom`:
+
+![image-20240218232435760](./img/image-20240218232435760.png) 
+
 ## `PowerToys`
 
 Used toys: `Keyboard Manager`, `Fancy zones`, `Quick Accent`, `Awake`
