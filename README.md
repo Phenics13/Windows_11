@@ -103,6 +103,9 @@ Modified `.bashrc` to use theme in `Bash`:
 ```sh
 # Load oh-my-posh theme
 eval "$(oh-my-posh init bash --config "/c/Users/sergeidranchenko/AppData/Local/Programs/oh-my-posh/themes/atomicMod.omp.json")"
+
+# Aliases
+alias ll="eza -l --icons"
 ```
 
 Installed modules for `Powershell`:
@@ -113,18 +116,37 @@ Set-ExecutionPolicy RemoteSigned
 # modules
 Install-Module PsReadLine -Force
 Install-Module -Name Terminal-Icons -Repository PSGallery -Force
+Install-Module -Name z -Force -AllowClobber
 ```
 
 Modified `$Profile` to use theme in `PowerShell`:
 
 ```sh
+# Aliases
+function list {
+	eza -l --icons
+}
+Set-Alias ll list
+
 # Load oh-my-posh theme
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomicMod.omp.json" | Invoke-Expression
-# Load Terminal-Icons for eza
+
+# Load Terminal-Icons for ls
 Import-Module -Name Terminal-Icons
+
+#Functions
+function whereis ($command) {
+	Get-Command -Name $command -ErrorAction SilentlyContinue |
+	Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
+}
+
+# PSReadLine
+Import-Module PSReadLine
+Set-PSreadLineKeyHandler -Key Tab -Function Complete
+Set-PSReadLineOption -PredictionViewStyle ListView
 ```
 
-Additional Video with some theming [here](https://www.youtube.com/watch?v=5-aK2_WwrmM)
+Additional Video with some theming [here](https://www.youtube.com/watch?v=5-aK2_WwrmM) and [here](https://www.youtube.com/watch?v=fviSilPKIhs)
 
 ## Feed
 
