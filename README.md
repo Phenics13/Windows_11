@@ -126,9 +126,11 @@ Import-Module -Name Terminal-Icons
 
 Additional Video with some theming [here](https://www.youtube.com/watch?v=5-aK2_WwrmM)
 
-*Remove feed from widgets:*
+## Feed
 
-...Write about it;
+To remove feed from widgets use [this](https://pureinfotech.com/disable-news-feed-widgets-windows-11)
+
+To remove feed from serach menu use [this](https://answers.microsoft.com/en-us/windows/forum/all/how-to-remove-the-newsfeed-from-the-search-menu-on/401e97d4-23ea-4f3b-b635-865c95eb5f21)
 
 ## 🦄 Applications:
 
