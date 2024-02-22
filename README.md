@@ -92,21 +92,28 @@ Install [`eza`](https://eza.rocks/):
 winget install eza-community.eza
 ```
 
+### `Starship`
+
+Install `starship`:
+
+```shell
+winget install --id Starship.Starship
+```
+
+I use Nerd Font Symbols Preset:
+
+```shell
+# to create a config file
+mkdir -p ~/.config && touch ~/.config/starship.toml
+# to use theme
+starship preset nerd-font-symbols -o ~/.config/starship.toml
+```
+
 ---
 
 I use custom theme `AtomicMod.omp.json` with `oh-my-posh` in `Bash` and `PowerShell`:
 
 ![image-20240218214522797](./img/image-20240218214522797.png)
-
-Modified `.bashrc` to use theme in `Bash`:
-
-```sh
-# Load oh-my-posh theme
-eval "$(oh-my-posh init bash --config "/c/Users/sergeidranchenko/AppData/Local/Programs/oh-my-posh/themes/atomicMod.omp.json")"
-
-# Aliases
-alias ll="eza -l --icons"
-```
 
 Installed modules for `Powershell`:
 
@@ -119,32 +126,7 @@ Install-Module -Name Terminal-Icons -Repository PSGallery -Force
 Install-Module -Name z -Force -AllowClobber
 ```
 
-Modified `$Profile` to use theme in `PowerShell`:
-
-```sh
-# Aliases
-function list {
-	eza -l --icons
-}
-Set-Alias ll list
-
-# Load oh-my-posh theme
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\atomicMod.omp.json" | Invoke-Expression
-
-# Load Terminal-Icons for ls
-Import-Module -Name Terminal-Icons
-
-#Functions
-function whereis ($command) {
-	Get-Command -Name $command -ErrorAction SilentlyContinue |
-	Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
-}
-
-# PSReadLine
-Import-Module PSReadLine
-Set-PSreadLineKeyHandler -Key Tab -Function Complete
-Set-PSReadLineOption -PredictionViewStyle ListView
-```
+I included `~/.bashrc`, `$PROFILE` and `~/.config/starship.toml` files in repo.
 
 Additional Video with some theming [here](https://www.youtube.com/watch?v=5-aK2_WwrmM) and [here](https://www.youtube.com/watch?v=fviSilPKIhs)
 
